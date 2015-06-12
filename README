@@ -1,0 +1,13 @@
+max prime gap calculator in parallel
+************************************
+
+This program uses MPI for process communication to find the largest gap between two consecutive prime numbers within a given range.
+
+build and run:
+	make
+	mpirun -np 4 ./primegap 2 1000 	(example)
+	(where 4 is the number of processes spawned and 2 -> 1000 is the range to search)
+
+output:
+	prints rangeProvided, largestPrimeGap, rangeSegmentSize, processingTimes
+	
